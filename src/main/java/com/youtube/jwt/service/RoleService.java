@@ -11,6 +11,7 @@ public class RoleService {
     @Autowired
     private RoleDao roleDao;
 
+    //save the role and persist to database and return the record from the database
     public Role createNewRole(Role role) {
         return roleDao.save(role);
     }
