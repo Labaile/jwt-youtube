@@ -18,8 +18,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @Component
-public class JwtRequestFilter extends OncePerRequestFilter {
-
+public class  JwtRequestFilter extends OncePerRequestFilter {
+//retrieve auth header and validate token, then allow request
     @Autowired
     private JwtUtil jwtUtil;
 
